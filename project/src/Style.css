@@ -1,2 +1,29 @@
 /*ไฟล์ CSS ใช้ตกแต่งแต่ละส่วน*/
 /* อยากให้มีเอฟเฟกต์เวลาเอาเมาส์ไปชี้ในตัวข้อความหรือกระเปาะทุกอันที่มีการเชื่อมลิ้งก์ไปที่อื่น */
+
+
+/* คำสั่งก้อนนี้สำหรับฟ้อน Anuphan ทั้งก้อน*/
+* {
+  font-family: "Anuphan", sans-serif !important; /*bootstab มันแรงเลยต้องมีcodeนี้ ถ้าไม่มีฟ้อนจะไม่ขึ้น*/
+}
+ิbody {
+  font-family: "Anuphan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* เลือกความหนาที่ต้องการ (100-700) */
+  font-style: normal;
+}
+
+
+/*footer อันนี้อย่าแก้*/
+.footer {
+    background-color: #1a1d20; /* bg สีดำ*/
+    color: white;              /* ตัวหนังสือสีขาว */
+    text-align: center;        /* จัดข้อความให้อยู่ตรงกลาง */
+    padding: 40px 20px;        /* เพิ่มพื้นที่ว่าง บน-ล่าง และ ซ้าย-ขวา */
+}
+
+.footer p {
+    margin-bottom: 10px;       /* เว้นระยะห่างระหว่างบรรทัด */
+    font-size: 14px;           /* ปรับขนาดตัวอักษรตามใจชอบ */
+    opacity: 0.9;              /* ให้ดูจางลงนิดนึงเพื่อให้ดูนวลตา */
+}
