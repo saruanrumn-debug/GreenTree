@@ -20,3 +20,15 @@
     text-decoration: none;
     color: black;
 }
+.Menu{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    width: 120px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+}
