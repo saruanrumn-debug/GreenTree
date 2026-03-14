@@ -6,10 +6,11 @@
 * {
   font-family: "Anuphan", sans-serif !important; /*bootstab มันแรงเลยต้องมีcodeนี้ ถ้าไม่มีฟ้อนจะไม่ขึ้น*/
 }
-ิbody {
+
+body {
   font-family: "Anuphan", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400; /* เลือกความหนาที่ต้องการ (100-700) */
+  font-weight: 400;
   font-style: normal;
 }
 
