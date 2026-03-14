@@ -31,13 +31,27 @@
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("https://png.pngtree.com/thumb_back/fh260/background/20240920/pngtree-large-trees-and-lush-greenery-abound-in-this-lovely-forest-enchanted-image_16235419.jpg");
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 400px;
     position: relative;
+    color: black;
+}
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     color: black;
 }
 .navbar{
     display: flex;
-    padding: 30px;
+    justify-self: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .img-thumbnail{
     width: 40px;
