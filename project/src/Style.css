@@ -75,3 +75,100 @@ body {
     border-radius: 10px;
     transition: 0.3s;
 }
+/* --- ส่วนตกแต่งการ์ดต้นไม้ --- */
+.card {
+    background: #ffffff;
+    border-radius: 20px;     /* ขอบมน*/
+    border: none;
+    padding: 15px;
+    margin: 15px;
+    width: 280px;            /* คุมความกว้างให้เท่ากันทุกใบ */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* เงาให้นูน*/
+    transition: 0.4s;        /* เอฟเฟกต์ตอนขยับ */
+    text-align: left;        /* ข้อความชิดซ้าย*/
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ชี้การ์ด */
+.card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12); /* เงาเข้มขึ้น */
+    transform: translateY(-8px);             /* การ์ดลอยขึ้น */
+}
+
+/* คุมขนาดรูปภาพในเครื่องให้เท่ากันและอยู่ตรงกลาง */
+.card img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%; 
+    height: 180px;           /* ล็อคความสูงรูปภาพ */
+    object-fit: cover;       /* รูปไม่ยืด/เบี้ยว */
+    border-radius: 15px;     /* รูปภาพขอบมนเข้ากับการ์ด */
+    margin-bottom: 15px;
+}
+
+/* แผน B: จัดการกลุ่มการ์ดทั้งหมดให้อยู่กึ่งกลางหน้าจออัตโนมัติ */
+div:has(> .card) {
+    display: flex !important;
+    flex-wrap: wrap !important;      /* สั่งให้ขึ้นบรรทัดใหม่ถ้าจอแคบ */
+    justify-content: center !important; /* จัดการ์ดทุกใบมาไว้กลางจอ */
+    gap: 20px;                       /* เว้นระยะห่างระหว่างการ์ดให้เท่ากัน */
+}
+/* 1. ขยายชื่อหัวข้อใน Banner(Tree Database) */
+.banner h1 {
+    font-size: 3.5rem;   /* ขยายใหญ่ */
+    font-weight: 700;    /* เพิ่มความหนา */
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.4rem;   /* ขยายคำอธิบายใต้ชื่อเว็บ */
+    opacity: 0.9;
+}
+
+/* 2. ขยายชื่อวงศ์ไม้ในส่วน Menu (Backdrop สีเทา) */
+.Menu a {
+    font-size: 1.1rem;   /* ให้ชื่อวงศ์ (เช่น วงศ์ถั่ว) อ่านง่ายขึ้น */
+    font-weight: 500;
+}
+
+/* 3. ขยายชื่อต้นไม้ในการ์ด (ต้นลีลาวดี) */
+.card b {
+    font-size: 1.4rem;   /* ชื่อต้นไม้ต้องเด่นที่สุดในการ์ด */
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* 4. ขยายรายละเอียด (ชื่อวิทยาศาสตร์/ชื่อวงศ์) */
+.card h6 {
+    font-size: 1rem;     /* ขยายให้อ่านออกโดยไม่ต้องเพ่ง */
+    line-height: 1.5;    /* เพิ่มระยะห่างบรรทัดให้ดูไม่อึดอัด */
+    color: #666;
+}
+
+/* 5. ขยายตัวหนังสือใน Navbar (หน้าหลัก / เกี่ยวกับเรา) */
+.navbar-brand {
+    font-size: 1.2rem;   /* ขยายเมนูบาร์ข้างบน */
+}
+/* ขยายหัวข้อโซน (ต้นไม้แนะนำ / ต้นไม้สวยงาม) ให้ใหญ่สะใจ */
+p.topic {
+    font-size: 2.5rem !important;    /* ขยายใหญ่ขึ้นเกือบเท่าตัว */
+    font-weight: 700;               /* ปรับให้หนาเข้ม */
+    text-align: center;             /* อยู่กึ่งกลางเสมอ */
+    margin-top: 60px;               /* เว้นระยะห่างจากด้านบนให้ดูไม่เบียด */
+    margin-bottom: 30px;            /* เว้นระยะห่างก่อนถึงตัวการ์ด */
+    color: #1a5d1a;                 /* ใช้สีเขียวเข้มโทนเดียวกับชื่อต้นไม้ */
+    letter-spacing: 1px;            /* เพิ่มระยะห่างตัวอักษรให้ดูโปรขึ้น */
+    position: relative;
+}
+
+/* แถม: ขีดเส้นใต้สวยๆ แบบมินิมอลใต้หัวข้อ */
+p.topic::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #78a678;           /* สีเขียวตุ่นๆ ตามบรีฟ */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}

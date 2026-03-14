@@ -1,76 +1,46 @@
-<!--เกี่ยวกับ-->
-
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <title>Tree Database</title>
-
-    <!--ตรงนี้ใส่เพื่อเรียกใช้ฟ้อนคัดลอกมาจาดเว็บ Googlefront-->
+    <title>Tree Database - About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap" rel="stylesheet">
-
-    <!--เอาคำสั่งใช้bootstap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-    <!--เอาคำสั่งตกแต่งมาจากไฟล์ style.css-->
     <link rel="stylesheet" href="Style.css">
-
 </head>
 
-<body>
-    <!-- navbar -->
-    <!-- มีการใช้ Bootstrab -->
-    <!--แท็บบาร์ข้างบนที่มีโลโก้,หน้าหลัก,เกี่ยวกับ-->
-    <nav class="navbar navbar-light " style=" background-color: rgb(53, 183, 94);">
-
-        <!-- โค้ดนี้สำหรับใส่รูปโลโก้หน้าชื่อเว็บ(แก้รูปได้) -->
-        <img src="Image/กล้วย.png" class="img-thumbnail" alt="Cinque Terre" width="50px" height="40px">
-
-        <a class="navbar-brand">Green Tree</a> <!-- ชื่อเว็บติดซ้ายมือ -->
-        <div class="ms-auto">
-            <a class="navbar-brand " href="Main.html">หน้าหลัก</a><!-- ติดขวามือ -->
-            <a class="navbar-brand " href="About.html">เกี่ยวกับเรา</a><!-- ติดขวามือ -->
-            <br>
+<body class="d-flex flex-column min-vh-100"> <nav class="navbar navbar-expand navbar-light" style="background-color: #35b75e; padding: 10px 20px;">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <img src="Image/Greentree_icon1.png" class="img-thumbnail" alt="Cinque Terre" width="50px" height="40px">
+                <span class="navbar-brand text-white mb-0 h1">Green Tree</span>
+            </div>
+            <div class="ms-auto">
+                <a class="nav-link d-inline text-white me-3" href="Main.html">หน้าหลัก</a>
+                <a class="nav-link d-inline text-white" href="About.html">เกี่ยวกับเรา</a>
+            </div>
         </div>
     </nav>
 
-    <!---ข้อมูลผู้จัดทำ ตรงนี้จัดการให้แล้วทำตรงอื่นเลย-->
-    <div class="d-flex flex-column align-items-center">
-        <!--ปิ่น-->
-        <div class="about">
-            <a class="about" href="data_about/ปิ่น.html">นางสาวณัฏฐ์วรินทร์ สรวญรัมย์</a>
-        </div>
-
-        <!--ต้นข้าว-->
-        <div class="about">
-            <a class="about" href="data_about/ต้นข้าว.html">นางสาวคอดีย๊ะ หลำเยะ</a>
-        </div>
-
-        <!--หงส์หยก-->
-        <div class="about">
-            <a class="about" href="data_about/หงส์หยก.html">นางสาวประทุมพร จิตจำนงค์</a>
-        </div>
-
-        <!--เกรซ-->
-        <div class="about">
-            <a class="about" href="data_about/เกรซ.html">นางสาวเบญญาภา งิ้วลาย</a>
-        </div>
+    <div class="container mt-5 flex-grow-1">
+        <p class="topic text-center">คณะผู้จัดทำ</p>
         
-        <!--โชกุน-->
-        <div class="about">
-            <a class="about" href="data_about/โชกุน.html">นายรัชชานนท์ พูลศิริ</a>
+        <div class="d-flex flex-column align-items-center mt-4">
+            <div class="about py-2"><a href="data_about/ปิ่น.html">นางสาวณัฏฐ์วรินทร์ สรวญรัมย์</a></div>
+            <div class="about py-2"><a href="data_about/ต้นข้าว.html">นางสาวคอดีย๊ะ หลำเยะ</a></div>
+            <div class="about py-2"><a href="data_about/หงส์หยก.html">นางสาวประทุมพร จิตจำนงค์</a></div>
+            <div class="about py-2"><a href="data_about/เกรซ.html">นางสาวเบญญาภา งิ้วลาย</a></div>
+            <div class="about py-2"><a href="data_about/โชกุน.html">นายรัชชานนท์ พูลศิริ</a></div>
         </div>
-
     </div>
 
-    <!--<footer: เป็นแท็ก HTML5 ที่เอาไว้บอกว่านี่คือส่วนท้ายเว็บ (ดีต่อ SEO)-->
-    <footer class="footer fixed-bottom">
-        <p>© 2026 ต้นไม้ในศิลปากร - รายวิชา WEB TECHNOLOGY (520112)</p>
-        <p>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร</p>
-        <p>จัดทำโดย กลุ่มGreenTree | ข้อมูลนี้ใช้เพื่อการศึกษาเท่านั้น</p>
+    <footer class="footer text-center py-4 bg-dark text-white mt-auto">
+        <div class="container">
+            <p class="mb-1">© 2026 ต้นไม้ในศิลปากร - รายวิชา WEB TECHNOLOGY (520112)</p>
+            <p class="mb-1">คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร</p>
+            <p class="mb-0">จัดทำโดย กลุ่มGreenTree | ข้อมูลนี้ใช้เพื่อการศึกษาเท่านั้น</p>
+        </div>
     </footer>
 
 </body>
