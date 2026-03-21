@@ -172,3 +172,94 @@ p.topic::after {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+/* 1. คุมพื้นที่ Carousel ให้แคบลงเพื่อให้ปุ่มเลื่อนดูใกล้การ์ดมากขึ้น */
+.custom-carousel-area {
+    max-width: 550px; /* บีบความกว้างสไลด์ */
+    margin: 0 auto;   /* จัดให้กลุ่มนี้อยู่กลางหน้าจอ */
+    position: relative;
+    padding: 0 50px;  /* เว้นที่ว่างให้ปุ่มเลื่อนด้านข้าง */
+}
+
+/* 2. จัดแต่งตัวการ์ดใบเดียวตรงกลาง */
+.tree-single-card {
+    width: 100%;      /* ขยายให้เต็มพื้นที่ที่บีบไว้ในข้อ 1 */
+    max-width: 350px; 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border: none;
+    margin: 20px auto; /* จัดการ์ดให้อยู่กลาง Carousel */
+}
+
+.tree-single-card img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* 3. จัดตัวหนังสือในหน้าการ์ดให้ชิดซ้าย */
+.tree-single-card .card-body {
+    padding: 20px;
+    text-align: left; /* ตัวหนังสือชิดซ้ายตามสั่ง */
+}
+
+/* 4. ปรับแต่งปุ่มเลื่อน (สัญลักษณ์รูปศร) */
+.custom-nav-icon {
+    background-color: rgba(25, 135, 84, 0.8); /* สีเขียว Bootstrap (Success) */
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+/* 5. ดึงปุ่มเลื่อนให้เข้ามาใกล้การ์ดมากขึ้น */
+.carousel-control-prev {
+    left: 0; /* ขยับจากขอบจอมาอยู่ขอบพื้นที่ที่บีบไว้ */
+}
+.carousel-control-next {
+    right: 0;
+}
+
+/* ปรับฟอนต์ชื่อวิทยาศาสตร์ให้สวยงาม */
+.sci-name {
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 5px;
+}
+
+/* แถบรายชื่อแบบเรียบง่าย */
+.member-simple-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px 0;
+    text-decoration: none !important;
+    border-bottom: 1px solid #eeeeee; /* เส้นคั่นบางๆ */
+    color: #333;
+    transition: 0.2s;
+}
+
+.member-simple-item:hover {
+    background-color: #f9f9f9; /* ไฮไลท์นิดเดียวเวลาชี้ */
+}
+
+/* รูปภาพขนาดใหญ่ */
+.img-large-circle {
+    width: 140px;  /* ปรับขนาดรูปให้ใหญ่ตามต้องการ */
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 1px solid #ddd; /* ขอบบางๆ ให้ดูเรียบร้อย */
+}
+
+/* ชื่อและนามสกุล (นางสาว/นาย อยู่ข้างหน้าแล้ว) */
+.full-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.member-simple-item:hover .full-name {
+    color: #35b75e; /* เปลี่ยนเป็นสีเขียวเวลาชี้ */
+}
